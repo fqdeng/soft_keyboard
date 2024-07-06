@@ -93,7 +93,7 @@ class AlphanumericKeyboard extends StatefulWidget {
 }
 
 class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
-  Capitalization capitalization = Capitalization.onlyFirstLetter;
+  Capitalization capitalization = Capitalization.lowerCase;
 
   KeyBoardType keyboardType = KeyBoardType.alphanumeric;
 
