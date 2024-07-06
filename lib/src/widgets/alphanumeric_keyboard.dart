@@ -125,8 +125,8 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
         constraints: const BoxConstraints(
-          minWidth: 30,
-          minHeight: 35,
+          minWidth: 80,
+          minHeight: 80,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
@@ -164,8 +164,8 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
         constraints: const BoxConstraints(
-          minWidth: 30,
-          minHeight: 40,
+          minWidth: 80,
+          minHeight: 80,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
@@ -269,8 +269,8 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
         constraints: const BoxConstraints(
-          minWidth: 30,
-          minHeight: 40,
+          minWidth: 80,
+          minHeight: 80,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
