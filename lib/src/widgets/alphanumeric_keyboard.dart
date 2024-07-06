@@ -24,7 +24,7 @@ class AlphanumericKeyboard extends StatefulWidget {
     this.keyBorderRadius = 10,
     this.actionKeyIconColor = Colors.white,
     this.onEnterTapped,
-    super.key,
+    super.key, required this.keyMinHeight, required this.keyMinWidth,
   });
 
   /// The height of the keyboard
@@ -84,6 +84,10 @@ class AlphanumericKeyboard extends StatefulWidget {
   /// Callback Function for Enter Key
   final Function()? onEnterTapped;
 
+  final double keyMinHeight;
+
+  final double keyMinWidth;
+
   @override
   State<AlphanumericKeyboard> createState() => _AlphanumericKeyboardState();
 }
@@ -124,9 +128,9 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           color: widget.alphanumericKeyColor,
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
-        constraints: const BoxConstraints(
-          minWidth: 80,
-          minHeight: 80,
+        constraints:  BoxConstraints(
+          minWidth: widget.keyMinWidth,
+          minHeight: widget.keyMinHeight,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
@@ -163,9 +167,9 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           color: widget.alphanumericKeyColor,
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
-        constraints: const BoxConstraints(
-          minWidth: 80,
-          minHeight: 80,
+        constraints:  BoxConstraints(
+          minWidth: widget.keyMinWidth,
+          minHeight: widget.keyMinHeight,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
@@ -268,9 +272,9 @@ class _AlphanumericKeyboardState extends State<AlphanumericKeyboard> {
           color: widget.actionKeyColor,
           borderRadius: BorderRadius.circular(widget.keyBorderRadius),
         ),
-        constraints: const BoxConstraints(
-          minWidth: 80,
-          minHeight: 80,
+        constraints: BoxConstraints(
+          minWidth: widget.keyMinWidth,
+          minHeight: widget.keyMinHeight,
         ),
         margin: const EdgeInsets.all(3.5),
         child: Center(
